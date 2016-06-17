@@ -1,1 +1,6 @@
-this is a file
+install jdk:
+  PATH configure:
+    JAVA_HOME=/your_local_jdkpath
+    PATH=$JAVA_HOME/bin:$PATH
+    CLASSPATH=$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
+
