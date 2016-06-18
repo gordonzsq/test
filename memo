@@ -4,3 +4,4 @@ install jdk:
     PATH=$JAVA_HOME/bin:$PATH
     CLASSPATH=$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
 
+android studio:
