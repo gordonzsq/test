@@ -1,0 +1,6 @@
+# install appium under ubuntu16.04
+1 用apt-file找到brew在那个包，安装brew
+  sudo apt-get install linuxbrew-wrapper
+2 更新brew：
+  brew update
+3 brew install node
