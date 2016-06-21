@@ -3,4 +3,11 @@
   sudo apt-get install linuxbrew-wrapper
 2 更新brew：
   brew update
-3 brew install node
+3 brew install node  (此种方法安装的npm版本为2.1，所以brew -help 查看删除了nodejs）
+
+4 官网上下载nodejs ：https://nodejs.org/
+5 设置环境变量， 查看npm -version 为3.0+
+6 npm install -g appium  # get appium
+7 npm install appium-doctor -g   （这个在1.53版本后，被删掉了，目前不知具体用处，安装来看看）
+8 npm install wd          # get appium client
+9 
