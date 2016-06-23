@@ -5,3 +5,4 @@ install jdk:
     CLASSPATH=$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
 
 android studio:
+
