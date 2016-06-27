@@ -5,6 +5,21 @@ public class CalTest extends UiAutomatorTestCase {
  
 }
 
-<android-sdk>/tools/android create uitest-project -n <name> -t $id -p <path>
-$id 为： android stdio/sdk 下tools/android list target 查看的当前版本对应id
+编写完java文件后， 以如下方式编译运行：
+1  <android-sdk>/tools/android create uitest-project -n <name> -t <id> -p <path>
+id 为： android stdio/sdk 下tools/android list target 查看的当前版本对应id
+name 为：java project的name
+path为：java project的path
+
+2  进入java project目录：
+ant -buildfile build.xml
+
+3 连接设备：
+adb connect XX.XX.XX.××
+
+4 push 到测试机：
+adb push demo.jar /data/local/tmp/
+
+5.执行测试
+adb shell uiautomator runtest demo.jar -c com.browser.demobrowser(class_name)
 
