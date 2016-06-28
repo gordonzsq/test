@@ -1,5 +1,7 @@
 1.创建一个Java工程 File-->New-->Java Project 输入工程名称，例如CalculatorAutoTest. 点击Finish
-2.添加必要的Jar包 在Project Explorer中右击刚刚创建的这个工程，选择 Properties-->Java build Path添加如下JAR包 a.选择Add library -->JUnit选择Junit4 b.选择Add External JARS, 选择sdk/platforms/android-*/目录下的uiautomator.jar和android.jar，路径中的*请使用自己以下载的 最新版本。
+2.添加必要的Jar包 在Project Explorer中右击刚刚创建的这个工程，选择 Properties-->Java build Path添加如下JAR包 
+a.选择Add library -->JUnit选择Junit4 
+b.选择Add External JARS, 选择sdk/platforms/android-*/目录下的uiautomator.jar和android.jar，路径中的*请使用自己以下载的 最新版本。
 3.File-->new-->Class创建一个新的文件，并确保该文件继承自UiAutomatorTestCase. 
 public class CalTest extends UiAutomatorTestCase {
  
@@ -23,3 +25,7 @@ adb push demo.jar /data/local/tmp/
 5.执行测试
 adb shell uiautomator runtest demo.jar -c com.browser.demobrowser(class_name)
 
+
+
+查看apk包信息（package activity等）
+aapt dump badging ×.apk
