@@ -14,7 +14,7 @@ name 为：java project的name
 path为：java project的path
 
 2  进入java project目录：
-ant -buildfile build.xml
+ant build -f build.xml
 
 3 连接设备：
 adb connect XX.XX.XX.××
@@ -29,3 +29,4 @@ adb shell uiautomator runtest demo.jar -c com.browser.demobrowser(class_name)
 
 查看apk包信息（package activity等）
 aapt dump badging ×.apk
+adb shell dumpsys window w | grep name=
